@@ -12,8 +12,7 @@ add_library(mark2systemaccessplugin SHARED ${mark2systemaccessplugin_SRCS})
 target_link_libraries(mark2systemaccessplugin
                       Qt5::Gui
                       Qt5::Qml
-                      KF5::I18n
-                      PW::KWorkspace)
+                      KF5::I18n)
 
 install(TARGETS mark2systemaccessplugin DESTINATION ${QML_INSTALL_DIR}/Mycroft/Private/Mark2SystemAccess)
 

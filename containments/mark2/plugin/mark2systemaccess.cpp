@@ -20,8 +20,6 @@
 #include <QDebug>
 #include <QProcess>
 
-#include <kworkspace5/kdisplaymanager.h>
-
 Mark2SystemAccess::Mark2SystemAccess(QObject *parent)
     : QObject(parent)
 {
@@ -48,12 +46,10 @@ void Mark2SystemAccess::executeCommand(const QString &command)
 
 void Mark2SystemAccess::requestShutdown()
 {
-    KWorkSpace::requestShutDown(KWorkSpace::ShutdownConfirmDefault, KWorkSpace::ShutdownTypeHalt);
 }
 
 void Mark2SystemAccess::requestReboot()
 {
-    KWorkSpace::requestShutDown(KWorkSpace::ShutdownConfirmDefault, KWorkSpace::ShutdownTypeReboot);
 }
 
 #include "mark2systemaccess.moc"

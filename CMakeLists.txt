@@ -26,8 +26,6 @@ find_package(Qt5 ${QT_MIN_VERSION} CONFIG REQUIRED COMPONENTS
     Qml
 )
 
-find_package(LibKWorkspace 5.14.90 CONFIG REQUIRED)
-
 find_package(KF5 ${KF5_MIN_VERSION} REQUIRED COMPONENTS I18n Plasma Package)
 
 add_definitions(-DQT_DISABLE_DEPRECATED_BEFORE=0)
